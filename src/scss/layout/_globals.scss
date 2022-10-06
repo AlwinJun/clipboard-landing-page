@@ -2,12 +2,15 @@
 
 body{
   background-color: hsl(0, 0%, 98%);
+  text-align: center;
 }
 
 .container{
-  padding: 3rem 1.5rem 1.5rem;
   margin: 0 auto;
   width: 95%;
   max-width: rem(1440);
 }
 
+.containerY{
+  padding-inline: .75rem;
+}
