@@ -53,10 +53,13 @@ select {
   font: inherit;
 }
 
+// Remove deafult border for button
 button{
   border: none;
 }
 
+
+//Removed links underline
 a,a:active,a:visited{
   text-decoration: none;
 }
