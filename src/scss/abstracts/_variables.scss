@@ -1,0 +1,20 @@
+@use 'functions' as *;
+
+// Colors
+$clr-cyan: hsl(171, 66%, 44%);
+$clr-light-blue: hsl(233, 100%, 69%);
+$clr-dark-grayish-blue: hsl(210, 10%, 33%);
+$clr-grayish-blue: hsl(201, 11%, 66%);
+
+// Font size
+$fs-primary: rem(16);
+
+// font-family
+$ff-main: 'Bai Jamjuree', sans-serif;
+
+//Font weight 
+
+$font-weight:(
+  "regualar": 400,
+  "extra-bold": 600
+);

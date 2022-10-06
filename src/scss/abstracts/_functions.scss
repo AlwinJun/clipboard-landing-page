@@ -1,0 +1,19 @@
+@use 'sass:math';
+
+@function rem($pixels){
+  @if unitless($pixels) {
+      @return math.div($pixels, 16) * 1rem;
+  }
+  @else{
+    @error 'Numbers only don\'t inlcude unit';
+  }
+}
+
+@function em($pixels) {
+  @if unitless($pixels) {
+    @return math.div($pixels, 16) * 1em;
+  }
+  @else {
+    @error 'Numbers only don\'t inlcude unit';
+  }
+}
