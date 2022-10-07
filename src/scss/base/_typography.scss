@@ -1,0 +1,18 @@
+@use '../abstracts/' as *;
+
+body{
+  font-size: $fs-primary;
+  font-weight: map-get($font-weight , regular);
+}
+
+h1,h2,h3{
+  color: $clr-dark-grayish-blue;
+  font-weight: map-get($font-weight , extra-bold);
+  margin-bottom: $mb-s;
+}
+
+p{
+  color: $clr-grayish-blue;
+  line-height: 1.4;
+  margin-bottom: $mb-m;
+}
