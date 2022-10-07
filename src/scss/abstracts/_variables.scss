@@ -15,6 +15,13 @@ $ff-main: 'Bai Jamjuree', sans-serif;
 //Font weight 
 
 $font-weight:(
-  "regualar": 400,
+  "regular": 400,
   "extra-bold": 600
 );
+
+//Margin
+  //Bottom
+  $mb-s: rem(24);
+  $mb-m: rem(54);
+  $mb-l: rem(135);
+  $mb-xl: rem(165);
