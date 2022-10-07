@@ -6,11 +6,10 @@ body{
 }
 
 .container{
-  margin: 0 auto;
+  position: relative;
   width: 95%;
   max-width: rem(1440);
+  padding-inline: rem(30);
+  margin: 0 auto;
 }
 
-.containerY{
-  padding-inline: .75rem;
-}
