@@ -12,6 +12,10 @@
     box-shadow: 
       0px -2px 6px 1px rgba(0, 0, 0, 0.20) inset,
       -1px 7px 5px 2px rgba(0, 0, 0, 0.10);
+
+      &:hover{
+        cursor: pointer;
+      }
   }
 
   &--cyan{
