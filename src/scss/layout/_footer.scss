@@ -8,17 +8,54 @@
   align-items: center;
   background-color: hsl(220, 18%, 97%);
   padding: 2rem 0;
+  @include breakpoint(medium){
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  &-row{
+    @include breakpoint(medium){
+      display: flex;
+      flex-direction: row;
+      margin-left: 6rem;
+      align-items: center;
+    }
+  }
+
+  &__nav{
+    @include breakpoint(medium) {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: rem(500);
+    }
+    @include breakpoint(large){
+      width: rem(600);
+    }
+  }
 
   &__logo{
     width: 3.5rem;
     margin-bottom: 2rem;
-  }
+    @include breakpoint(medium){
+      margin-bottom: 0;
+      margin-right: 6rem;
+    }
+}
 
   &__links{
     display: flex;
     flex-direction: column;
     gap: 1rem;
     margin-bottom: 2rem;
+    @include breakpoint(medium) {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 2rem;
+      width: 55%;
+      margin-block: 0;
+      text-align: left;
+    }
     
     a {
       color: $clr-dark-grayish-blue;
@@ -40,11 +77,16 @@
     i{
       color: $clr-dark-grayish-blue;
       font-size: 1.7rem;
-
       &:hover{
         color: $clr-cyan;
       }
     }
-
+  }
+  .attribution{
+    margin-bottom: 0;
+    @include breakpoint(medium){
+      text-align: center;
+      margin: 2rem auto;
+    }
   }
 }

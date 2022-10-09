@@ -1,11 +1,14 @@
 @use '../abstracts/' as *;
 
 .first-section{
-  margin-bottom: rem(155);
+  margin-bottom: rem(140);
+  
+  @include breakpoint(medium){
+    overflow: hidden;
+  }
 
   &__img{
     margin-bottom: rem(60);
-
     @include breakpoint(medium) {
       width: 55%;
     }
@@ -39,8 +42,13 @@
 }
 
 .second-section{
-
   margin-bottom: $mb-l;
+
+  &__img img{
+    @include breakpoint(medium){
+      margin: 0 auto;
+    }
+  }
 
   p{
     margin-bottom: rem(45);
@@ -50,9 +58,23 @@
 .third-section{
   margin-bottom: rem(155);
 
+  @include breakpoint(medium){
+    margin-inline: 2rem;
+  }
+
   &__items{
     .top{
       margin-bottom: rem(128);
+    }
+
+    .flex-col {
+      @include breakpoint(medium) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 3rem;
+      }
     }
 
     .bottom{
@@ -61,21 +83,34 @@
         flex-direction: column;
         align-items: center;
         gap: rem(60);
+
+        @include breakpoint(medium) {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          gap: 3rem;
+          width: 100%;
+        }
       }  
-
     } 
-
-
   }
 
   &__item{
-
     margin-bottom: rem(50);
+
+    @include breakpoint(medium){
+      flex-basis: 100%;
+      margin-bottom: 0;
+    }
+
+    p{
+      margin-bottom: 0;
+    }
 
     img{
       margin-inline: auto;
       margin-bottom: rem(25);
-      
     }
   }
 }
