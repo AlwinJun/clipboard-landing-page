@@ -8,8 +8,20 @@ body{
 .container{
   position: relative;
   width: 100%;
-  max-width: rem(1440);
+  max-width: rem(1800);
   padding-inline: rem(20);
   margin: 0 auto;
+
+  @include breakpoint(medium){
+    padding-inline: 0;
+    overflow: hidden;
+  }
 }
 
+// set a width when hit 700px breakpoint
+.center{
+  @include breakpoint(medium){
+    width: rem(510);
+    margin-inline: auto;
+  }
+}

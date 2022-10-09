@@ -6,6 +6,11 @@
   align-items: center;
   gap: $mb-s;
 
+  @include breakpoint(medium){
+    flex-direction: row;
+    justify-content: center;
+  }
+
   button{
     padding: rem(19) rem(74);
     border-radius: 25rem;

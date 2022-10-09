@@ -1,12 +1,41 @@
 @use '../abstracts/' as *;
 
 .first-section{
-
   margin-bottom: rem(155);
 
   &__img{
     margin-bottom: rem(60);
+
+    @include breakpoint(medium) {
+      width: 55%;
+    }
   }
+
+  &--row{
+    @include breakpoint(medium){
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 2.5rem;
+      max-width: rem(1400);
+      transform: translateX(-2rem);
+    }
+  }
+
+  &__items{
+    @include breakpoint(medium) {
+        width: 40%;
+        text-align: left;
+    }
+  }
+
+    &__item {
+      @include breakpoint(medium) {
+        width: 70%;
+        
+      }
+    }
 }
 
 .second-section{
