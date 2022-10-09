@@ -7,7 +7,7 @@ $clr-dark-grayish-blue: hsl(210, 10%, 33%);
 $clr-grayish-blue: hsl(201, 11%, 66%);
 
 // Font size
-$fs-primary: rem(16);
+$fs-primary: clamp(rem(14), 2vw ,rem(16));
 
 // font-family
 $ff-main: 'Bai Jamjuree', sans-serif;
@@ -21,7 +21,7 @@ $font-weight:(
 
 //Margin
   //Bottom
-  $mb-s: rem(24);
-  $mb-m: rem(54);
-  $mb-l: rem(135);
-  $mb-xl: rem(165);
+  $mb-s: rem(20);
+  $mb-m: rem(45);
+  $mb-l: rem(120);
+  $mb-xl: rem(140);

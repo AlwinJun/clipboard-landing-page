@@ -8,12 +8,26 @@ body{
 h1,h2,h3{
   color: $clr-dark-grayish-blue;
   font-weight: map-get($font-weight , extra-bold);
+}
+
+h1{
+  font-size: rem(32);
+  margin-bottom: rem(28);
+}
+
+h2{
+  font-size: rem(24);
   margin-bottom: $mb-s;
+}
+
+h3{
+  font-size: rem(20);
+  margin-bottom: rem(16);
 }
 
 p{
   color: $clr-grayish-blue;
-  line-height: 1.4;
+  line-height: 1.5;
   margin-bottom: $mb-m;
 }
 

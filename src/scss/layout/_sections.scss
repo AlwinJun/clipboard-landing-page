@@ -1,0 +1,56 @@
+@use '../abstracts/' as *;
+
+.first-section{
+
+  margin-bottom: rem(155);
+
+  &__img{
+    margin-bottom: rem(60);
+  }
+}
+
+.second-section{
+
+  margin-bottom: $mb-l;
+
+  p{
+    margin-bottom: rem(45);
+  }
+}
+
+.third-section{
+  margin-bottom: rem(155);
+
+  &__items{
+    .top{
+      margin-bottom: rem(128);
+    }
+
+    .bottom{
+      ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: rem(60);
+      }  
+
+    } 
+
+
+  }
+
+  &__item{
+
+    margin-bottom: rem(50);
+
+    img{
+      margin-inline: auto;
+      margin-bottom: rem(25);
+      
+    }
+  }
+}
+
+.fourth-section{
+  margin-bottom: $mb-xl;
+}
