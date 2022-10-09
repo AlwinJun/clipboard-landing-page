@@ -11,12 +11,11 @@ h1,h2,h3{
 }
 
 h1{
-  font-size: rem(32);
+  font-size: clamp(rem(25), 2vw + 1rem , rem(32));
   margin-bottom: rem(28);
 }
 
 h2{
-  font-size: rem(24);
   margin-bottom: $mb-s;
 }
 
