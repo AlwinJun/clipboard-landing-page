@@ -1,13 +1,13 @@
 @use '../abstracts/' as *;
 
 body{
-  background-color: hsl(0, 0%, 98%);
+  background-color: hsl(0, 0%, 100%);
   text-align: center;
 }
 
 .container{
   position: relative;
-  width: 95%;
+  width: 100%;
   max-width: rem(1440);
   padding-inline: rem(20);
   margin: 0 auto;
